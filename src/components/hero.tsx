@@ -19,9 +19,9 @@ export default function Hero(props: HeroProps) {
       />
      </div>
      <div className="pt-48 flex justify-center items-center z-20">
-       <h1 className="text-orange-400 text-6xl">{props.title}</h1>
+       <h1 className="text-White-100 text-6xl">{props.title}</h1>
      </div>
-     <div className="absolute inset-0 bg-gradient-to-r from-slate-500"></div>
+     <div className="absolute inset-0 bg-gradient-to-r from-slate-0"></div>
     </div>
  
   );
