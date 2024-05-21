@@ -1,29 +1,19 @@
-import type {StaticImageData} from "next/image";
-import Image from "next/image";
 
 interface HeroProps {
-    imgData: StaticImageData;
-    imgAlt: string;
-    title: string;
+  title: string;
+  text: string;
 }
 
 export default function Hero(props: HeroProps) {
   return (
-    <div className="relative h-screen">
-     <div className="absolute -z-10 inset-0">
-      <Image
-        src = {props.imgData}
-        alt = {props.imgAlt}
-        fill
-        style = {{ objectFit: 'cover'}} 
-      />
-     </div>
-     <div className="pt-48 flex justify-center items-center z-20">
-       <h1 className="text-White-100 text-6xl">{props.title}</h1>
-     </div>
-     <div className="absolute inset-0 bg-gradient-to-r from-slate-0"></div>
-    </div>
- 
-  );
-
+    <div className="relative h-screen flex flex-col justify-center items-center">
+       <h1 className="text-black text-6xl">{props.title}</h1>
+       <br />
+      <div className="flex items-center space-x-8 animate-marquee">
+        <div className="bg-white p-1 rounded-lg shadow-md flex-shrink-0">
+      <p className="text-black text-4xl">{props.text}</p>
+      </div>
+      </div>
+    </div>
+  );
 }

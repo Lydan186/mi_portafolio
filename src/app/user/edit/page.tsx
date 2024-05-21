@@ -1,14 +1,18 @@
 import galleryImg from "/public/f30.jpg";
 import Hero from "@/components/hero";
-import Carrusel from "@/components/carrusel"
+import Carrusel from "@/components/carrusel";
 
 export default function Edit() {
-    
-    return (
-      <div>
-        <Hero imgData={galleryImg} imgAlt = "f30" title = "Proyectos personales"/>
-        <Carrusel githubToken="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" />
-      </div>
-    );
-  }
+
+  return (
+    <div className="bg-gray-200">
+
+      <Hero 
+      title="Proyectos personales" 
+      text="Aqui se encontraran los proyectos en los que he participado o he creado." 
+      />
+      <Carrusel />
+    </div>
+  );
+}
   
