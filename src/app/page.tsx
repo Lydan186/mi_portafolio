@@ -1,10 +1,10 @@
-import homeImg from "/public/a small boat anchored outside at sunset.jpg";
+import homeImg from "/public/pexels2.jpg";
 import Hero from "@/components/hero";
 
 export default function Home() {
   return (
-    <div className="bg-gray-200">
-    <Hero title = "Bienvenido a mi curriculum" text = ""/>
+    <div>
+    <Hero imgData={homeImg} imgAlt="" title = "Bienvenido a mi curriculum" text = ""/>
     
     </div>
   );

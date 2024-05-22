@@ -2,7 +2,7 @@
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-r from-blue-500 to-green-500 py-8">
+    <footer className="bg-gradient-to-r from-gray-950 to-gray-500 py-8">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
         <div className="mb-4 md:mb-0">
           <h3 className="text-lg font-bold mb-2">Datos de contacto</h3>

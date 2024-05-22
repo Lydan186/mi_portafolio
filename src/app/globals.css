@@ -31,4 +31,11 @@ body {
     text-wrap: balance;
   }
 }
-
+@layer utilities {
+  .text-gradient {
+    background-image: linear-gradient(to right, #000000, #666565);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
