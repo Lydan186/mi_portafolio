@@ -4,7 +4,7 @@ import Hero from "@/components/hero";
 export default function Home() {
   return (
     <div>
-    <Hero imgData={homeImg} imgAlt="" title = "Bienvenido a mi curriculum" text = ""/>
+    <Hero imgData={homeImg} imgAlt="" title = "Bienvenido a mi curriculum" text = "Es un gusto que pases por acá"/>
     
     </div>
   );

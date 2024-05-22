@@ -16,19 +16,15 @@ export function loadRepositories(carouselContainerId) {
             <div class="p-4">
               <h3 class="text-white text-lg font-bold mb-2">${repo.name}</h3>
               <p class="text-white">${repo.description}</p>
-              <button class="text-white font-bold py-2 px-4 rounded mt-4 bg-orange-600 shadow-lg shadow-orange-500/50 flex-shrink-0 hover:scale-110 transition-transform duration-300">
+              <button class="text-white font-bold py-2 px-4 rounded mt-4 bg-orange-600 shadow-lg shadow-orange-500/50 flex-shrink-0 hover:scale-110 transition-transform duration-300" onclick="window.open('${repo.html_url}', '_blank')">
                 Ver Proyecto
+              </button>
+              <button class="text-white font-bold py-2 px-4 rounded mt-4 bg-orange-600 shadow-lg shadow-orange-500/50 flex-shrink-0 hover:scale-110 transition-transform duration-300" onclick="window.open('${repo.html_url}/archive/refs/heads/main.zip', '_blank')">
+                Descargar Proyecto
               </button>
             </div>
           </div>
         `;
-
-        const button = projectElement.querySelector('button');
-
-        button.addEventListener('click', () => {
-
-          window.open(repo.html_url, '_blank');
-        });
 
         carouselContainer.appendChild(projectElement);
       });
@@ -37,4 +33,3 @@ export function loadRepositories(carouselContainerId) {
       console.error('Error al obtener los repositorios:', error);
     });
 }
-
