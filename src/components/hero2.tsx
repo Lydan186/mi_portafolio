@@ -22,10 +22,10 @@ export default function Hero2(props: Hero2Props) {
         alt={props.imgAlt} 
         width={400} 
         height={400}
-        className="max-w-15 max-h-15 rounded-full shadow-lg flex-shrink-0 hover:scale-110 transition-transform duration-300" 
+        className="max-w-[200px] max-h-[200px] sm:max-w-[300px] sm:max-h-[300px] md:max-w-[400px] md:max-h-[400px] rounded-full shadow-lg flex-shrink-0 hover:scale-110 transition-transform duration-300" 
       />
 
-<div 
+      <div 
         className="absolute top-0 left-0 w-full h-full"
         style={{
           backgroundImage: `url(${props.imgData2.src})`,
@@ -35,7 +35,7 @@ export default function Hero2(props: Hero2Props) {
         }}
       />
 
-<div className="w-full max-w-screen-lg p-8 relative">
+      <div className="w-full max-w-screen-lg p-8 relative">
         <h2 className="text-4xl font-bold text-white mb-8 text-center">{props.title}</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="bg-white p-8 rounded-lg shadow-md flex-shrink-0 hover:scale-110 transition-transform duration-300">
