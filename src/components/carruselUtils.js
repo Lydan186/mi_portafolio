@@ -5,9 +5,9 @@ dotenv.config();
 
 export function loadRepositories(carouselContainerId) {
   const carouselContainer = document.getElementById(carouselContainerId);
-  const userName = process.env.NEXT_PUBLIC_USERNAME;
-  console.log(userName)
-  fetch('https://api.github.com/users/'+userName+'/repos')
+  const UserName = process.env.NEXT_PUBLIC_USERNAME;
+  console.log(UserName)
+  fetch('https://api.github.com/users/'+UserName+'/repos')
     .then(response => response.json())
     .then(data => {
       data.forEach(repo => {
