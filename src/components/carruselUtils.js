@@ -1,7 +1,13 @@
+import 'dotenv/config'
+import dotenv from 'dotenv';
+dotenv.config();
+
+
 export function loadRepositories(carouselContainerId) {
   const carouselContainer = document.getElementById(carouselContainerId);
-
-  fetch('https://api.github.com/users/Lydan186/repos')
+  const userName = process.env.NEXT_PUBLIC_USERNAME;
+  console.log(userName)
+  fetch('https://api.github.com/users/'+userName+'/repos')
     .then(response => response.json())
     .then(data => {
       data.forEach(repo => {
