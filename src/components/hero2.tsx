@@ -66,10 +66,10 @@ export default function Hero2(props: Hero2Props) {
           <div className="bg-white p-8 rounded-lg shadow-md flex-shrink-0 hover:scale-110 transition-transform duration-300">
           <h3 className="text-lg font-semibold text-gradient mb-2">Experiencias laborales</h3>
           <ul className="list-disc list-inside text-gradient">
-              <li>Amigo del chino quien creo la Abaco</li>
-              <li>Compañero de Neil Armstrong</li>
-              <li>Compañero de cuarto de Lionel Messi</li>
-              <li>Amigo de Juan Santamaria</li>
+              <li>5 años trabajando en la pascalina</li>
+              <li>4 años lavando platos en la Soda Maggy</li>
+              <li>6 años trabajando en bases de datos en el Banco Nacional</li>
+              <li>2 años trabajando con el encendedor de Juan Santamaria</li>
             </ul>
           </div>
         </div>
